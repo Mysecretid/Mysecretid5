@@ -1,6 +1,6 @@
 <html ng-app="app" >
 	<head>
-		<title ng-bind="state.Stats.Title">CrackingZone</title>
+		<title ng-bind="state.Stats.Title">Bugs4u.info</title>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="css/Lato/Lato.css">
 		<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
@@ -9,20 +9,10 @@
 		<style type="text/css">[ng-cloak]{display: none;}</style>
 	</head>
 	<body class="app"><div ng-cloak class="cage">
-		<div ng-if="!connected" class="connect-warning ui inverted vertical masthead center aligned segment">
-			<div class="ui text container">
-			<h1 class="ui inverted header">
-				i ❤ CrackingZone...
-			</h1>
-			<h1 class="ui inverted header">
-				<i class="red lightning icon"></i>
-			</h1>
-			</div>
-		</div>
 		<!-- TITLE ===================== -->
 		<div class="title">
 			<h2>
-				<a href="http://www.crackingzone.com/"
+				<a href="http://bugs4u.info/forum/"
 				target="_blank"
 				ng-init="logoHover = false"
 				ng-mouseover="logoHover = true"
@@ -56,7 +46,7 @@
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
 
 		<footer>
-			<span>Made with ❤ by Abhishek Chauhan | <a href="http://www.crackingzone.com/" target="_blank">CrackingZone</a> version {{ state.Stats.Version }}	-	</span>
+			<span>Made with ❤ by <a href="http://bugs4u.info/forum/index.php?/user/32961-mysecretid/" target="_blank">Mysecretid</a> | <a href="http://bugs4u.info/forum/" target="_blank">Bugs4u.info</a> version {{ state.Stats.Version }}	-	</span>
 			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
 			<span>Copyright Ⓒ 2016 {{ state.Stats.Runtime }}</span>
 		</footer>
